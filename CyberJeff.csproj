@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <AWSProjectType>Lambda</AWSProjectType>
+    <Company>Ansien</Company>
+    <Authors>devansien</Authors>
+    <Version>0.1.0</Version>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <Product>Cyber Jeff</Product>
+    <Description>Fine Wine Delivery virtual assistant skill project</Description>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Alexa.NET.APL" Version="3.15.0" />
+    <PackageReference Include="Amazon.Lambda.Core" Version="1.1.0" />
+    <PackageReference Include="Amazon.Lambda.Serialization.Json" Version="1.5.0" />
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.3.101.23" />
+    <PackageReference Include="IBM.Watson.Assistant.v2" Version="3.1.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="v1Core\g_Pages\" />
+    <Folder Include="v1Core\i_Speeches\Ssml\" />
+  </ItemGroup>
+  
+</Project>
